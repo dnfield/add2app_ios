@@ -27,7 +27,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         super.init()
         // Create the data model.
         let dateFormatter = DateFormatter()
-        pageData = dateFormatter.monthSymbols
+        pageData = dateFormatter.weekdaySymbols
     }
 
     func viewControllerAtIndex(_ index: Int, storyboard: UIStoryboard) -> DataViewController? {

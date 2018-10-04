@@ -1,0 +1,9 @@
+//
+//  Flutter.xcconfig
+//  TestAddFlutter
+//
+//  Created by Dan Field on 9/18/18.
+//  Copyright © 2018 Dan Field. All rights reserved.
+//
+#include "/Users/dnfield/src/iosmodule/.ios/Flutter/Generated.xcconfig"
+ENABLE_BITCODE=NO

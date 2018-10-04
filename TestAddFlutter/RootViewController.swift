@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Flutter
 
 class RootViewController: UIViewController, UIPageViewControllerDelegate {
 
@@ -20,7 +21,10 @@ class RootViewController: UIViewController, UIPageViewControllerDelegate {
         self.pageViewController = UIPageViewController(transitionStyle: .pageCurl, navigationOrientation: .horizontal, options: nil)
         self.pageViewController!.delegate = self
 
-        let startingViewController: DataViewController = self.modelController.viewControllerAtIndex(0, storyboard: self.storyboard!)!
+        let startingViewController: UIViewController = self.modelController.viewControllerAtIndex(0, storyboard: self.storyboard!)!
+//        let flutterViewController = FlutterViewController()
+//                self.present(flutterViewController, animated: true)
+
         let viewControllers = [startingViewController]
         self.pageViewController!.setViewControllers(viewControllers, direction: .forward, animated: false, completion: {done in })
 
